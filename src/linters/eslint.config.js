@@ -1,6 +1,6 @@
 import js from "@eslint/js";
 import globals from "globals";
-import stylistic from '@stylistic/eslint-plugin';
+import stylistic from "@stylistic/eslint-plugin";
 
 export default [
     {
@@ -20,7 +20,7 @@ export default [
     },
     {
         plugins: {
-            ' @stylistic': stylistic
+            " @stylistic": stylistic
         },
         files: ["src/**/*.js", "tests/**/*.js"],
         ignores: ["src/js/lib/*", "src/js/connection/supabase_settings.js"],

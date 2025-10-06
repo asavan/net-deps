@@ -9,7 +9,7 @@ function getLocalExternalIP(defaultAddr) {
         .flat()
         .filter(a => a.family === "IPv4" && !a.internal);
     if (cand.length > 1) {
-        cand = cand.filter(a => a.netmask === "255.255.255.0")
+        cand = cand.filter(a => a.netmask === "255.255.255.0");
     }
     if (cand.length === 0) {
         return defaultAddr;
