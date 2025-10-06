@@ -1,5 +1,4 @@
 import path from "path";
-import { fileURLToPath } from "url";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import HTMLInlineCSSWebpackPlugin from "html-inline-css-webpack-plugin";
@@ -10,8 +9,7 @@ import {InjectManifest} from "workbox-webpack-plugin";
 import CopyPlugin from "copy-webpack-plugin";
 import webpack from "webpack";
 
-const prodConfig = (version) => {
-    const dirname = path.dirname(fileURLToPath(import.meta.url));
+const prodConfig = (version, dirname) => {
     return {
 
         entry: {main: ["./src/index.js", "./src/css/style.css"]},
