@@ -1,4 +1,4 @@
-import { WebSocketServer } from "ws";
+import { WebSocketServer, WebSocket } from "ws";
 
 const onConnection = (clients) => (ws, req) => {
     // https://stackoverflow.com/questions/14822708/
