@@ -8,23 +8,18 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "ws": "node devtools/ws-server.js",
-    "start": "webpack serve --config webpack_configs/webpack.config.js --mode development",
-    "all": "npm-run-all -p -r ws start",
-    "android": "webpack --config webpack_configs/android.webpack.config.js --mode production",
-    "build": "webpack --config webpack_configs/production.webpack.config.js --mode production",
-    "style": "npx eslint . -c src/linters/eslint.config.js",
-    "style:fix": "npx eslint . -c src/linters/eslint.config.js --fix",
-    "style2": "npx stylelint --config linters/.stylelintrc.json \"src/**/*.css\"",
-    "style2:fix": "npx stylelint --config linters/.stylelintrc.json \"src/**/*.css\" --fix",
+    "style": "npx eslint . -c linters/eslint.config.js",
+    "style:fix": "npx eslint . -c linters/eslint.config.js --fix",
     "style3": "npx oxlint -D all -A no-console -A max-params -A prefer-add-event-listener -A no-useless-undefined -A no-undefined -A no-async-await -A func-names -A default-case -A filename-case -A no-lonely-if -A sort-keys -A no-magic-numbers -A no-plusplus -A prefer-global-this -A id-length -A yoda -A func-style -A switch-case-braces -A max-lines-per-function -A init-declarations -A prefer-set-has -A no-continue -A prefer-destructuring -A prefer-template -A no-null -A catch-error-name -A sort-imports -A no-rest-spread-properties -A no-eq-null -A no-optional-chaining -A no-await-in-loop -A no-negated-condition -A new-cap -A no-alert -A eqeqeq --threads=1 --deny-warnings  --ignore-pattern=src/js/lib/* ./src",
     "style4": "npx oxlint --threads=1 --deny-warnings ./src",
-    "test": "node --test --test-reporter dot",
-    "test:verbose": "node --test",
-    "test:coverage": "npx c8 node --test --test-reporter dot",
     "updates": "npx ncu",
     "updates:fix": "npx ncu -u && npm install && npm audit fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asavan/net-deps.git"
+  },
+  "homepage": "https://github.com/asavan/net-deps",
   "dependencies": {
     "devdeps": "github:asavan/dev-deps#v0.0.4",
     "npm-run-all": "^4.1.5",
