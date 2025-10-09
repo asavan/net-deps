@@ -25,7 +25,7 @@
     "updates:fix": "npx ncu -u && npm install && npm audit fix"
   },
   "dependencies": {
-    "devdeps": "github:asavan/dev-deps#6eee345d2f6c72bb2162c91f137a30ad915b8361",
+    "devdeps": "github:asavan/dev-deps#v0.0.4",
     "npm-run-all": "^4.1.5",
     "ws": "8.18.3"
   }
