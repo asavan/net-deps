@@ -1,6 +1,6 @@
 {
   "name": "net-deps",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Alex Sav",
   "description": "Net deps",
   "main": "index.js",
