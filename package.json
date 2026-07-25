@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/asavan/net-deps",
   "dependencies": {
-    "devdeps": "github:asavan/dev-deps#v0.0.12",
-    "npm-run-all2": "^8.0.4",
-    "ws": "8.19.0"
+    "devdeps": "github:asavan/dev-deps#v0.0.17",
+    "npm-run-all2": "^9.0.2",
+    "ws": "8.21.1"
   }
 }
